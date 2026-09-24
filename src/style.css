@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.card {
+    position: relative;
+    perspective: 1000px;
+}
+
+.card img,
+.card .contenu {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card img {
+    transform: rotateY(0deg);
+}
+
+.card .contenu {
+    transform: rotateY(180deg);
+}
+
+
+.contenu {
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.contenu::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(10px);
+
+    z-index: -1;
+}
+
+nav ul li {
+    transition: text-decoration 0.3s ease;
+}
+
+.card a {
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    background-color: oklch(26.8% 0.011 36.5);
+    color: #f3efea;    
+}
