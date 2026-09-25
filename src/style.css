@@ -62,3 +62,8 @@ nav ul li.underline {
     background-color: oklch(26.8% 0.011 36.5);
     color: #f3efea;    
 }
+
+.popup {
+    top: -200px;
+    transition: all 0.3s ease-in-out;
+}

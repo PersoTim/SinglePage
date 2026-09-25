@@ -51,3 +51,23 @@ uls.forEach((ul) => {
         })
     })
 })
+
+
+
+const buttons = document.querySelectorAll(".card a")
+const cart = document.querySelector(".cart")
+const popup = document.querySelector(".popup")
+
+let objets = 0
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        objets++
+        cart.innerHTML = `Cart (${objets})`
+
+        popup.style.top = "0"
+        setTimeout(() => {
+            popup.style.top = "-200px"
+        }, 1500)
+    })
+})

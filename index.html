@@ -8,6 +8,13 @@
     <title>Koba | Products</title>
 </head>
 <body>
+    <div class="popup fixed left-1/2 z-10 bg-neutral-100 py-2 px-6 rounded-b-md rounded-x-md border-b-2 border-x-2 shadow-lg">
+        <div class="popup-content flex items-center justify-around">
+            <svg class="stroke-black w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <h1>Purchase Completed</h1>
+        </div>
+    </div>
+
     <nav class="flex justify-between items-center p-4">
         <img src="./assets/logo_marque.png" alt="logo" class="h-15">
         <ul class="gap-10 hidden md:flex">
@@ -22,7 +29,7 @@
             <li class="text-lg font-[Roboto] font-[300]"><a href="#">Stores</a></li>
         </ul>
 
-        <a href="#" class="text-lg font-[Roboto] font-[300]">Cart (0)</a>
+        <a href="#" class="text-lg font-[Roboto] font-[300] cart">Cart (0)</a>
     </nav>
 
     <div class="flex items-center ml-10">
@@ -34,7 +41,7 @@
         </div>
     </div>
 
-    <section class="flex flex-wrap gap-15 justify-center my-20">
+    <section class="flex flex-wrap gap-15 justify-center my-20 md:mx-10">
         <div class="card relative w-100 h-140 cursor-pointer">
             <img src="./assets/efd6d4e2-1169-4e10-8d70-f415c19fd1fd.webp" alt="image_1" class="w-100 h-140 object-cover">
             <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/texture_paper.png')">
