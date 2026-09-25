@@ -3,100 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
     <link rel="shortcut icon" href="./assets/Images/Icone.png" type="image/x-icon">
-    <title>Koba | Products</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Koba | Home</title>
 </head>
 <body>
-    <div class="popup fixed left-1/2 z-10 bg-neutral-100 py-2 px-6 rounded-b-md rounded-x-md border-b-2 border-x-2 shadow-lg">
-        <div class="popup-content flex items-center justify-around">
-            <svg class="stroke-black w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            <h1>Purchase Completed</h1>
+
+
+    <main class="w-[100vw] h-[100vh] bg-opacity-95">
+        <div class="bg-[url(/assets/Images/main.png)] bg-cover bg-center w-[100vw] h-[100vh] opacity-80 absolute z-0"></div>
+        <nav class="flex justify-between items-center p-4 z-1 relative">
+            <img src="./assets/Images/logo_marque.png" alt="logo" class="h-15">
+            <ul class="gap-10 hidden md:flex">
+                <li class="text-lg font-[Roboto] font-[300] underline underline-offset-6 selected"><a href="#">Home</a></li>
+                <li class="text-lg font-[Roboto] font-[300]"><a href="./products.html">Products</a></li>
+                <li class="text-lg font-[Roboto] font-[300]"><a href="./collections.html">Collections</a></li>
+                <li class="text-lg font-[Roboto] font-[300]"><a href="#">Journals</a></li>
+            </ul>
+    
+            <ul class="gap-10 hidden lg:flex">
+                <li class="text-lg font-[Roboto] font-[300]"><a href="#">About</a></li>
+                <li class="text-lg font-[Roboto] font-[300]"><a href="#">Stores</a></li>
+            </ul>
+    
+            <a href="#" class="text-lg font-[Roboto] font-[300] cart">Cart (0)</a>
+        </nav>
+        <div class="flex items-center justify-center h-full text-gray-950 relative bottom-20 gap-2">
+            <h1 class="text-8xl title">Welcome to </h1>
+            <img src="./assets/Images/logo_marque.png" alt="logo" class="w-65 relative top-0.5 koba-logo">    
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-2 absolute bottom-20 w-full">
+            <h2 class="text-white ">Scroll for more </h2>
+            <svg class="stroke-white w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4L12 20M12 20L18 14M12 20L6 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         </div>
     </div>
 
-    <nav class="flex justify-between items-center p-4">
-        <img src="./assets/Images/logo_marque.png" alt="logo" class="h-15">
-        <ul class="gap-10 hidden md:flex">
-            <li class="text-lg font-[Roboto] font-[300]"><a href="#">Home</a></li>
-            <li class="text-lg font-[Roboto] font-[300] underline underline-offset-6 selected"><a href="#">Products</a></li>
-            <li class="text-lg font-[Roboto] font-[300]"><a href="./collections.html">Collections</a></li>
-            <li class="text-lg font-[Roboto] font-[300]"><a href="#">Journals</a></li>
-        </ul>
+    <section class="container m-auto px-20 my-15 flex flex-col gap-30">
+        <div class="flex gap-50 justify-center items-center h-full ">
+            <div class="w-1/2 flex flex-col justify-between h-100 ">
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-4xl font-[Roboto]">About Koba</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, eius quibusdam voluptas esse nobis commodi neque iste autem aspernatur possimus veniam ipsum obcaecati? Beatae suscipit accusantium temporibus, fuga veniam quas.
+                    Dicta adipisci autem possimus sint vel quibusdam facere pariatur! Dolore, aliquam. Delectus blanditiis incidunt voluptatum aliquid perferendis est, fuga ipsum soluta explicabo itaque laborum officia voluptates libero iste nulla iure?</p>    
+                </div>
 
-        <ul class="gap-10 hidden md:flex">
-            <li class="text-lg font-[Roboto] font-[300]"><a href="#">About</a></li>
-            <li class="text-lg font-[Roboto] font-[300]"><a href="#">Stores</a></li>
-        </ul>
+                <div class="flex gap-20">
+                    <img src="./assets/Images/personne1.jpeg" alt="image" class="w-20 h-20 grayscale rounded-[100%]">
+                    <img src="./assets/Images/personne2.jpeg" alt="image" class="w-20 h-20 grayscale rounded-[100%]">
+                    <img src="./assets/Images/personne3.jpeg" alt="image" class="w-20 h-20 grayscale rounded-[100%]">
+                </div>
+            </div>
+            <img src="./assets/Images/cosmos_269632572.jpeg" alt="image" class="w-1/2 h-150 object-cover object-top grayscale rounded-3xl">    
+        </div>
 
-        <a href="#" class="text-lg font-[Roboto] font-[300] cart">Cart (0)</a>
-    </nav>
+        <div class="flex flex-col gap-5 pt-20" id="products">
+            <div class="flex justify-between">
+                <h1 class="text-4xl font-[Roboto]">Products</h1>
+                <div class="flex items-center ml-10">
+                    <div class="border-1 border-gray-500 h-10 flex items-center px-5 rounded-l-lg">
+                        <h4>See more</h4>
+                    </div>
+                    <div class="border-1 border-gray-500 h-10 flex items-center px-2 border-l-0 rounded-r-lg">
+                        <a href="./products.html"><svg class="stroke-black w-5 relative top-0.25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- <div class="flex items-center ml-10">
-        <div class="border-1 border-gray-500 h-10 flex items-center px-2 border-r-0 rounded-l-lg">
-            <a href=""><svg class="stroke-black w-5 relative top-0.25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12H4M4 12L10 6M4 12L10 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
-        </div>
-        <div class="border-1 border-gray-500 h-10 flex items-center px-5 rounded-r-lg">
-            <h4>Home</h4>
-        </div>
-    </div> -->
+            <div class="flex justify-between">
+                <img src="./assets/Images/efd6d4e2-1169-4e10-8d70-f415c19fd1fd.webp" alt="image_1" class="w-100 h-140 object-cover">
+                <img src="./assets/Images/cosmos_482151706.jpeg" alt="image_2" class="w-100 h-140 object-cover">
+                <img src="./assets/Images/cosmos_1521206254.jpeg" alt="image_5" class="w-100 h-140 object-cover">
 
-    <section class="flex flex-wrap gap-15 justify-center my-20 md:mx-10">
-        <div class="card relative w-100 h-140 cursor-pointer">
-            <img src="./assets/Images/efd6d4e2-1169-4e10-8d70-f415c19fd1fd.webp" alt="image_1" class="w-100 h-140 object-cover">
-            <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/Images/texture_paper.png')">
-                <div class="flex flex-col gap-5">
-                    <h1 class="text-2xl font-[Roboto]">Cosmos</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, itaque quae tempore deserunt impedit vero ullam. Incidunt, aspernatur numquam, adipisci mollitia magnam placeat qui minima voluptatem quaerat, deleniti nesciunt animi?</h3>
-                </div>
-                <a href="#" class="border-2 border-taupe-800 text-taupe-800 px-4 py-1 cursor-pointer"><button class="relative bottom-0.5 uppercase font-[Roboto] cursor-pointer">Purchase</button></a>
-            </div>
-        </div>
-        <div class="card relative w-100 h-140 cursor-pointer">
-            <img src="./assets/Images/cosmos_482151706.jpeg" alt="image_2" class="w-100 h-140 object-cover">
-            <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/Images/texture_paper.png')">
-                <div class="flex flex-col gap-5">
-                    <h1 class="text-2xl font-[Roboto]">Cosmos</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, itaque quae tempore deserunt impedit vero ullam. Incidunt, aspernatur numquam, adipisci mollitia magnam placeat qui minima voluptatem quaerat, deleniti nesciunt animi?</h3>
-                </div>
-                <a href="#" class="border-2 border-taupe-800 text-taupe-800 px-4 py-1 cursor-pointer"><button class="relative bottom-0.5 uppercase font-[Roboto] cursor-pointer">Purchase</button></a>
-            </div>
-        </div>
-        <div class="card relative w-100 h-140 cursor-pointer">
-            <img src="/assets/Images/cosmos_936963856.jpeg" alt="image_3" class="w-100 h-140 object-cover">
-            <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/Images/texture_paper.png')">
-                <div class="flex flex-col gap-5">
-                    <h1 class="text-2xl font-[Roboto]">Cosmos</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, itaque quae tempore deserunt impedit vero ullam. Incidunt, aspernatur numquam, adipisci mollitia magnam placeat qui minima voluptatem quaerat, deleniti nesciunt animi?</h3>
-                </div>
-                <a href="#" class="border-2 border-taupe-800 text-taupe-800 px-4 py-1 cursor-pointer"><button class="relative bottom-0.5 uppercase font-[Roboto] cursor-pointer">Purchase</button></a>
-            </div>
-        </div>
-        <div class="card relative w-100 h-140 cursor-pointer">
-            <img src="./assets/Images/cosmos_2106364461.jpeg" alt="image_4" class="w-100 h-140 object-cover">
-            <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/Images/texture_paper.png')">
-                <div class="flex flex-col gap-5">
-                    <h1 class="text-2xl font-[Roboto]">Cosmos</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, itaque quae tempore deserunt impedit vero ullam. Incidunt, aspernatur numquam, adipisci mollitia magnam placeat qui minima voluptatem quaerat, deleniti nesciunt animi?</h3>
-                </div>
-                <a href="#" class="border-2 border-taupe-800 text-taupe-800 px-4 py-1 cursor-pointer"><button class="relative bottom-0.5 uppercase font-[Roboto] cursor-pointer">Purchase</button></a>
-            </div>
-        </div>
-        <div class="card relative w-100 h-140 cursor-pointer">
-            <img src="./assets/Images/cosmos_1521206254.jpeg" alt="image_5" class="w-100 h-140 object-cover">
-            <div class="contenu absolute top-0 w-100 h-140 p-10 flex flex-col justify-around items-center" style="--bg: url('./assets/Images/texture_paper.png')">
-                <div class="flex flex-col gap-5">
-                    <h1 class="text-2xl font-[Roboto]">Cosmos</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, itaque quae tempore deserunt impedit vero ullam. Incidunt, aspernatur numquam, adipisci mollitia magnam placeat qui minima voluptatem quaerat, deleniti nesciunt animi?</h3>
-                </div>
-                <a href="#" class="border-2 border-taupe-800 text-taupe-800 px-4 py-1 cursor-pointer"><button class="relative bottom-0.5 uppercase font-[Roboto] cursor-pointer">Purchase</button></a>
             </div>
         </div>
     </section>
+    
 
     <footer class="w-[100vw] flex flex-col justify-center items-center pt-4">
         <img src="./assets/Images/logo_marque_top.png" alt="logo" class="w-[200vw]">
-        <div class="flex justify-around w-full border-t-2 py-20 flex-col md:flex-row items-top gap-10">
+        <div class="flex justify-around w-full border-t-2 py-20 flex-col md:flex-row items-center md:items-top gap-10">
             <div class="flex flex-col gap-5">
                 <h4 class="text-2xl font-[Roboto] font-[500]">Contact Us</h4>
                 <div>
@@ -117,5 +103,5 @@
         </div>
     </footer>
 </body>
-<script type="module" src="./src/main.js"></script>
+<script src="./src/main.js" type="module"></script>
 </html>

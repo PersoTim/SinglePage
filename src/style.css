@@ -79,3 +79,21 @@ nav ul li.underline {
     font-family: "Clash Display";
     text-shadow: 1px 1px 1px rgb(70, 70, 70);
 }
+
+.title{
+    font-family: "Clash Display";
+    color: #181715;
+    text-shadow: 1px 1px 1px rgb(171, 171, 171);
+}
+
+.koba-logo{
+    filter: drop-shadow(1px 1px 1px rgb(171, 171, 171));
+}
+
+.collection img{
+    transition: all 0.3s ease-in-out;
+}
+
+.collection:hover img{
+    opacity: 100%;
+}
